@@ -8,3 +8,6 @@ class PeriodicTask(models.Model):
         auto_now=False, auto_now_add=False,
         editable=False, blank=True, null=True,
     )
+
+    def __unicode__(self):
+        return self.name
